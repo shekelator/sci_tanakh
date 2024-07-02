@@ -6,21 +6,14 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				// VS Code specific
-				"dbaeumer.vscode-eslint",
-				"EditorConfig.EditorConfig",
-				// Python specific
 				"ms-python.python",
-				// C++ specific
-				"ms-vscode.cpptools",
-				"twxs.cmake",
-				// OpenCV specific
-				"did1335.opencv-intellisense",
-				"gsgupta.opencv-snippets",
-				// Markdown specific
-				"yzhang.markdown-all-in-one",
-				// Spell Checker
-				"streetsidesoftware.code-spell-checker"
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"vscode-icons-team.vscode-icons",
+				"lextudio.restructuredtext-pack",
+				"trond-snekvik.simple-rst"
 			],
 			"settings": {
 				// "terminal.integrated.defaultProfile.linux": "zsh"
@@ -43,7 +36,7 @@
 	"postStartCommand": "bash start-notebook.sh &",
 	//
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode",
+	"remoteUser": "vscode"
 	//
 	//"mounts": [
 	//	"source=${localWorkspaceFolder},target=/home/ws-mount,type=bind,consistency=cached"

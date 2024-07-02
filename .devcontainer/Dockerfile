@@ -54,12 +54,14 @@ RUN apt-get update && \
         # py3
         python3 \
         python3-dev \
-        python3-pip 
+        python3-pip \
+        jq
         # python3-venv \
         # python3-wheel \
         # python3-setuptools \
         # python3-opencv \
         # libopencv-dev
+
 
 # Cleanup
 RUN apt-get autoremove -fy && \
@@ -76,7 +78,7 @@ RUN pip3 config --user set global.disable-pip-version-check true && \
     pip3 install --upgrade wheel && \
     pip3 install tensorflow && \
     pip3 install ipykernel docutils jupyter pyyaml pylint h5py && \
-    pip3 install numpy pandas sklearn scipy && \
+    pip3 install numpy pandas scikit-learn scipy && \
     pip3 install matplotlib seaborn pydotplus && \
     pip3 install keras --no-deps && \
     pip3 install opencv-python && \
